@@ -14,7 +14,7 @@
 		      if (target.length) {
 		        $('html, body').animate({
 		          scrollTop: target.offset().top
-		        }, 1000);
+		        }, 4500);
 		        return false;
 		      }
 		    }
@@ -30,7 +30,6 @@
 		h1 {
             color: #D3D3D3;
             font-family: 'PT Sans', sans-serif;
-            background-color:white;
             font-size: 90px;
             text-align: center;
             padding: 5px;
@@ -38,9 +37,10 @@
         }
 
         body {    
-    		margin: 0 !important;
-    		padding-bottom: 15px;
+    		padding:0!important; 
+    		margin:0 !important;
     		background-color: #1a2c56;
+    		padding-bottom: 0px;
 		}
 
 		h2 {
@@ -218,43 +218,62 @@
 		.demo a:hover {
 			opacity: .5;
 		}
+
+		.parallax {
+		    /* The image used */
+		    background-image: url(https://i.imgur.com/8bwq5og.jpg);
+
+		    /* Set a specific height */
+		    min-height: 1000px;
+
+		    /* Create the parallax scrolling effect */
+		    background-attachment: fixed;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		}
+
 	</style>
 </head>
 <body>
-	<h1 style="color:black; background-color:white">Our Great Overlord</h1>
+	<div style="height:810px;background-color:#1a2c56;">
+		<h1 style="color:black; background-color:white">Our Great Overlord</h1>
 
-	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Donald_Trump_August_19%2C_2015_%28cropped%29.jpg/440px-Donald_Trump_August_19%2C_2015_%28cropped%29.jpg" style="display: block; margin-left: auto; margin-right: auto" alt="mr.donald j trump could not be loaded and he is sad"></img>
-
-	<br>
-
-	<section id="section01" class="demo">
-		<a href="#section02"><span></span>Scroll</a>
-	</section>
-
-	<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-
-	<section id="section02" >
-		<h1 style="background-color:#1a2c56;">Biography</h1>
-
-		<h4>Donald John Trump (born June 14, 1946) is an American businessman, television personality, author, politician, and the Republican Party nominee for President of the United States in the 2016 election. He is chairman of The Trump Organization, which is the principal holding company for his real estate ventures and other business interests. <br>Born and raised in New York City, Trump received a bachelor's degree in economics from the Wharton School of the University of Pennsylvania in 1968. While attending college, Trump worked in his father <br>Fred Trump's real estate and construction firm. He was given control of the business in 1971 and later renamed it "The Trump Organization". During his career, Trump has built skyscrapers, hotels, casinos,<br> golf courses, and numerous other developments across North and South America, Europe and Asia, many of which bear his name, such as the Trump Place apartment complex in Manhattan. He sought the Reform Party presidential nomination in 2000 but withdrew before voting began. Listed by Forbes among the world's wealthiest 500 billionaires, Trump and his businesses, as well as his personal life and political views, have for decades received considerable media exposure. He hosted and co-produced The Apprentice, a reality television series on NBC, from 2004 to 2015, for which he received a star on the Hollywood Walk of Fame. He has also made numerous cameo appearances in films and television series, and appeared at the Miss USA pageants which he owned from 1996 to 2015.</h4>
-
-		<div class="pHolder">
-		<h3 style="font-size:7px; font-family: 'PT Sans', sans-serif; text-align: center; color:#d1a683;">Taken from Wikipedia</h3>
-		</div>
-
-		<div class="buttonHolder">
-		<a href="https://twitter.com/realdonaldtrump" target="_blank"><button class="button" style="vertical-align:middle"><span>His Twitter </span></button></a>
-		<a href="https://www.facebook.com/DonaldTrump" target="_blank"><button class="button" style="vertical-align:middle"><span>His Facebook </span></button></a>
-		<a href="https://instagram.com/realdonaldtrump" target="_blank"><button class="button" style="vertical-align:middle"><span>His Instagram </span></button></a>
-		</div>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Donald_Trump_August_19%2C_2015_%28cropped%29.jpg/440px-Donald_Trump_August_19%2C_2015_%28cropped%29.jpg" style="display: block; margin-left: auto; margin-right: auto" alt="mr.donald j trump could not be loaded and he is sad"></img>
 
 		<br>
 
-		<div class="pHolder">
-		<h3 style="font-size:5px; font-family: 'PT Sans', sans-serif; text-align: center; color:#d1a683;">This website was designed and created by Austin Liu as a satirical joke. It is not meant to be taken seriously and should not be taken seriously. All of this is also under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</h3>
-		<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="color: #d1a683;">
-			<img alt="Creative Commons License" style="border-width:0;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" style="" />
-		</div>	
-	</section>
+		<section id="section01" class="demo">
+			<a href="#section02"><span></span>Scroll</a>
+		</section>
+	</div>	
+
+	<div class="parallax"></div>
+
+	<div style="height:450px;background-color:#1a2c56;">
+		<section id="section02" >
+			<h1 style="background-color:#1a2c56; font-size: 70px;">Biography</h1>
+
+			<h4>Donald John Trump (born June 14, 1946) is an American businessman, television personality, author, politician, and the Republican Party nominee for President of the United States in the 2016 election. He is chairman of The Trump Organization, which is the principal holding company for his real estate ventures and other business interests. <br>Born and raised in New York City, Trump received a bachelor's degree in economics from the Wharton School of the University of Pennsylvania in 1968. While attending college, Trump worked in his father <br>Fred Trump's real estate and construction firm. He was given control of the business in 1971 and later renamed it "The Trump Organization". During his career, Trump has built skyscrapers, hotels, casinos,<br> golf courses, and numerous other developments across North and South America, Europe and Asia, many of which bear his name, such as the Trump Place apartment complex in Manhattan. He sought the Reform Party presidential nomination in 2000 but withdrew before voting began. Listed by Forbes among the world's wealthiest 500 billionaires, Trump and his businesses, as well as his personal life and political views, have for decades received considerable media exposure. He hosted and co-produced The Apprentice, a reality television series on NBC, from 2004 to 2015, for which he received a star on the Hollywood Walk of Fame. He has also made numerous cameo appearances in films and television series, and appeared at the Miss USA pageants which he owned from 1996 to 2015.</h4>
+
+			<div class="pHolder">
+			<h3 style="font-size:7px; font-family: 'PT Sans', sans-serif; text-align: center; color:#d1a683;">Taken from Wikipedia</h3>
+			</div>
+
+			<div class="buttonHolder">
+			<a href="https://twitter.com/realdonaldtrump" target="_blank"><button class="button" style="vertical-align:middle"><span>His Twitter </span></button></a>
+			<a href="https://www.facebook.com/DonaldTrump" target="_blank"><button class="button" style="vertical-align:middle"><span>His Facebook </span></button></a>
+			<a href="https://instagram.com/realdonaldtrump" target="_blank"><button class="button" style="vertical-align:middle"><span>His Instagram </span></button></a>
+			</div>
+
+			<br>
+
+			<div class="pHolder">
+			<h3 style="font-size:5px; font-family: 'PT Sans', sans-serif; text-align: center; color:#d1a683;">This website was designed and created by Austin Liu as a satirical joke. It is not meant to be taken seriously and should not be taken seriously. All of this is also under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</h3>
+			<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="color: #d1a683;">
+				<img alt="Creative Commons License" style="border-width:0;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" style="" />
+			</div>	
+		</section>
+	</div>
 </body>
 </html>
